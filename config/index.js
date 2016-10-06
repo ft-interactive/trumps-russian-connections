@@ -26,7 +26,7 @@ export default async function() {
     return {
       name: name,
       intro: intro,
-      list: groups[name],
+      people: groups[name],
     };
   });
 
