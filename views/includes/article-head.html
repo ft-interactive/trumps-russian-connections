@@ -7,10 +7,18 @@
 <p class="o-typography-lead">
   {{ summary | md(true) }}
   {% if relatedArticle %}
+  
   <a href="{{ relatedArticle.url }}" class="o-typography-link">{{ relatedArticle.text }}</a>
   {% endif %}
 </p>
 <meta itemprop="dateModified" content="{{ publishedDate | isotime }}">
+
+<figure>
+  <img alt="" src="master.jpg" style="width: 100%" style="float:left"></img>
+  <figcaption class="o-typography-caption">
+  </figcaption>
+</figure>
+
 
 <p>
   {%- if publishedDate -%}

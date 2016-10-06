@@ -5,26 +5,26 @@ export default () => ({ // eslint-disable-line
 
   // canonical URL of the published page
   // https://ig.ft.com/sites/trumps-russian-connections get filled in by the ./configure script
-  url: 'https://ig.ft.com/sites/trumps-russian-connections',
+  url: 'https://ig.ft.com/sites/trumps-russian-connections/',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Politics and the English Language',
+  headline: 'Trump\'s Russian connections',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary: 'Political language is designed to make lies sound truthful' +
            'and murder respectable, and to give an appearance of solidity to pure wind',
 
   topic: {
-    name: 'Starter Kit',
-    url: '/foo',
+    name: '',
+    url: '',
   },
 
   relatedArticle: {
-    text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+    text: 'US Election 2016 »',
+    url: 'https://www.ft.com/us-election-2016',
   },
 
   mainImage: {
@@ -38,8 +38,8 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
+    { name: 'Michael Stott', url: 'https://www.ft.com/stream/authorsId/Yjg2YTBhOWQtMTZjMS00ZjUzLWIyYTYtMDVmYmNmYzNhZDAz-QXV0aG9ycw==' },
+    { name: 'Leila Haddou', url: 'https://www.ft.com/stream/authorsId/YWJlMGNlYTktMDhkMi00OWYyLWFiNWYtYjk4ODg4YzcyOTYw-QXV0aG9ycw=='  },
   ],
 
   // Appears in the HTML <title>

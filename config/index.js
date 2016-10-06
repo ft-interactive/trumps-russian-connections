@@ -1,11 +1,29 @@
 import article from './article';
 import getFlags from './flags';
 import getOnwardJourney from './onward-journey';
+import people from './people';
+import _ from 'lodash';
 
 export default async function() {
   const d = await article();
   const flags = await getFlags();
   const onwardJourney = await getOnwardJourney();
+
+  // Groups the people by category
+  const groups = _.groupBy(people, person => person.category);
+
+  // This decides the order of the groups
+  const groupNames = _.sortBy(_.uniq(people.map(p => p.category)));
+
+  const sortedGroups = groupNames.map(name => {
+    return {
+      name: name,
+      list: groups[name]
+    };
+  });
+
+
+  console.log(sortedGroups)
   /*
   An experimental demo that gets content from the API
   and overwrites some model values. This requires the Link File
@@ -30,6 +48,7 @@ export default async function() {
 
   return {
     ...d,
+    groups: sortedGroups,
     flags,
     onwardJourney,
   };

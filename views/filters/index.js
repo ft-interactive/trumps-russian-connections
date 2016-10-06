@@ -18,6 +18,14 @@ export function isotime(date) {
   return date.toISOString();
 }
 
+
+export function personImage(person) {
+  let path = !person.firstname ? person.lastname : (person.firstname + '-' + person.lastname);
+  path = path.toLowerCase().replace(/\ +/g, '-');
+  return `https://ig.ft.com/static/trumps-russian-connections/images/${path}.jpg`;
+}
+
+
 // strftime format docs: https://github.com/d3/d3-time-format
 export function strftime(date, format = defaultFTDateFormat) {
   if (!date) {
