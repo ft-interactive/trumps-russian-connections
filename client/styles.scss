@@ -2,6 +2,10 @@
 @import 'components/core/main';
 @import 'o-grid/main';
 
+a {
+  cursor: pointer;
+}
+
 h1.o-typography-heading1 {
   font-size: 36px;
   color: #333333;
@@ -12,6 +16,14 @@ h1.o-typography-heading1 {
 header > p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 30em;
 }
 
 .o-typography-lead {
@@ -47,6 +59,10 @@ figcaption.o-typography-caption {
   margin-bottom: 0;
 }
 
+header > p {
+  text-align: center;
+}
+
 // group names
 .o-typography-body-wrapper h2 {
  font-family: MetricWeb, sans-serif;
@@ -56,6 +72,19 @@ figcaption.o-typography-caption {
  text-transform: uppercase;
  display: block;
  text-align: center;
+}
+
+div.article-body > h2:first-child {
+  padding-top: 10px;
+}
+
+
+.article-body > p.intro {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: MetricWeb, sans-serif;
+  font-size: 20px;
 }
 
 
@@ -188,10 +217,10 @@ figcaption.o-typography-caption {
       }
     }
 
-// .bottom-byline {
-//   padding-top: 0;
-//   padding-bottom: 0;
-// }
+.article-body > .bottom-byline {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
 
  @include oGridRespondTo(M) {
 
@@ -250,6 +279,11 @@ figcaption.o-typography-caption {
         }
       }
 
+      .article-body > .bottom-byline {
+        padding-top: 10px;
+        padding-bottom: 0;
+      }
+
 }
 
 
@@ -305,4 +339,8 @@ figcaption.o-typography-caption {
         }
       }
 
+      .article-body > .bottom-byline {
+        padding-top: 10px;
+        padding-bottom: 0px;
+      }
 }

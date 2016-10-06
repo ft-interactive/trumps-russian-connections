@@ -7,7 +7,7 @@
 <p class="o-typography-lead">
   {{ summary | md(true) }}
   {% if relatedArticle %}
-  
+
   <a href="{{ relatedArticle.url }}" class="o-typography-link">{{ relatedArticle.text }}</a>
   {% endif %}
 </p>
@@ -42,5 +42,6 @@
     {{ byline | md(true) }}
   {%- endif -%}
   </span>
+  <hr>
   {%- endif -%}
 </p>
