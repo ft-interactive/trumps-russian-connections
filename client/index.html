@@ -21,9 +21,9 @@
 </div>
 {% endmacro %}
 
-{% macro Group(name, people) %}
+{% macro Group(name, people, intro) %}
 <h2>{{name | capitalize }}</h2>
-{#<p class="intro">{{intro}}</p> #}
+<p class="intro">{{ intro }}</p>
 <div class="group">
   {% for person in people %}
     {{ PersonCard(person) }}
@@ -35,9 +35,9 @@
 {% block article_body %}
 
   {% for group in groups %}
-    {{ Group(group.name, group.list) }}
+    {{ Group(group.name, group.list, group.intro) }}
   {%  endfor %}
 
-<div class="article__byline">Page design: <a href="https://twitter.com/alekswis">Aleksandra Wisniewska</a> and <a href="https://twitter.com/carolinenevitt">Caroline Nevitt</a></div>
-<div class="article__byline">Illustration: NAME AND SURNAME</div>
+<div class="article__byline bottom-byline">Page design: <a href="https://twitter.com/alekswis" class="o-typography-link-topic o-typography-link-topic--small" itemprop="author">Aleksandra Wisniewska</a> and <a href="https://twitter.com/carolinenevitt" class="o-typography-link-topic o-typography-link-topic--small" itemprop="author">Caroline Nevitt</a></div>
+<div class="article__byline bottom-byline">Illustration: NAME AND SURNAME</div>
 {% endblock %}

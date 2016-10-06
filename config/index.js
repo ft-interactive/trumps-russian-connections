@@ -13,17 +13,25 @@ export default async function() {
   const groups = _.groupBy(people, person => person.category);
 
   // This decides the order of the groups
-  const groupNames = _.sortBy(_.uniq(people.map(p => p.category)));
+  const allGroups = people.map(p => p.category);
+  const groupNames = _.sortBy(_.uniq(allGroups));
 
   const sortedGroups = groupNames.map(name => {
+
+    const intro = groups[name].reduce(function( previous, current ){
+      if(current.intro) return current.intro;
+      return previous;
+    }, '');
+
     return {
       name: name,
-      list: groups[name]
+      intro: intro,
+      list: groups[name],
     };
   });
 
 
-  console.log(sortedGroups)
+  //console.log(sortedGroups)
   /*
   An experimental demo that gets content from the API
   and overwrites some model values. This requires the Link File
