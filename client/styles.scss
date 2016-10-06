@@ -23,7 +23,7 @@ hr {
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    width: 30em;
+    width: 20em;
 }
 
 .o-typography-lead {
@@ -50,9 +50,9 @@ figcaption.o-typography-caption {
    padding: 1.2em 0.75em 0.5em;
 }
 
-// .o-share {
-//   visibility:hidden;
-// }
+header > div.o-share {
+  display: none;
+}
 
 
 .article-head {
@@ -81,7 +81,8 @@ div.article-body > h2:first-child {
 
 .article-body > p.intro {
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
+  line-height: 23px;
   text-align: center;
   font-family: MetricWeb, sans-serif;
   font-size: 20px;
@@ -224,9 +225,13 @@ div.article-body > h2:first-child {
 
  @include oGridRespondTo(M) {
 
-  //  .o-share {
-  //    visibility: visible;
-  //  }
+   header > div.o-share {
+     display: inline-block;;
+   }
+
+   .article-body > p.intro {
+     line-height: 25px;
+   }
 
   .image-holder,
   .card__body {
@@ -295,7 +300,7 @@ div.article-body > h2:first-child {
 
   .o-typography-lead{
     font-size: 26px;
-    line-height: 27px;
+    line-height: 28px;
   }
 
   .article-body > :not(.graphic) {
@@ -305,6 +310,10 @@ div.article-body > h2:first-child {
   //  .o-share {
   //    visibility: visible;
   //  }
+
+  hr {
+      width: 30em;
+  }
 
   .image-holder,
   .card__body {
