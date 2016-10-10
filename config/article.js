@@ -11,7 +11,7 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Trump\'s Russian connections',
+  headline: 'Trump\'s Russian World: ' + 'Three decades of deals and dollars',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary: 'Political language is designed to make lies sound truthful' +
@@ -39,7 +39,7 @@ export default () => ({ // eslint-disable-line
   // if array of authors, url is optional
   byline: [
     { name: 'Michael Stott', url: 'https://www.ft.com/stream/authorsId/Yjg2YTBhOWQtMTZjMS00ZjUzLWIyYTYtMDVmYmNmYzNhZDAz-QXV0aG9ycw==' },
-    { name: 'Leila Haddou', url: 'https://www.ft.com/stream/authorsId/YWJlMGNlYTktMDhkMi00OWYyLWFiNWYtYjk4ODg4YzcyOTYw-QXV0aG9ycw=='  },
+    { name: 'Catherine Belton', url: 'https://www.ft.com/search?q=Catherine+Belton'  },
   ],
 
   // Appears in the HTML <title>
