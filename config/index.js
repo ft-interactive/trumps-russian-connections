@@ -14,7 +14,7 @@ export default async function() {
 
   // This decides the order of the groups
   const allGroups = people.map(p => p.category);
-  const groupNames = _.sortBy(_.uniq(allGroups));
+  const groupNames = _.uniq(allGroups);
 
   const sortedGroups = groupNames.map(name => {
 
