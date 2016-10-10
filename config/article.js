@@ -11,11 +11,10 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Trump\'s Russian World: ' + 'Three decades of deals and dollars',
+  headline: 'Trump\'s Russian connections',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Political language is designed to make lies sound truthful' +
-           'and murder respectable, and to give an appearance of solidity to pure wind',
+  summary: 'The Republican contender\'s fascination with Russia spans 30 years from Gorbachev to Putin, mingling business, entertainment and politics',
 
   topic: {
     name: '',
@@ -43,10 +42,10 @@ export default () => ({ // eslint-disable-line
   ],
 
   // Appears in the HTML <title>
-  title: '',
+  title: 'Trump\'s Russian connections span 30 years rom Gorbachev to Putin, mingling business, entertainment and politics',
 
   // meta data
-  description: '',
+  description: 'Pressure on Donald Trump over his ties with Russia has grown after the US formally accused the Russian government of attempting to meddle in November’s presidential election',
 
   /*
   TODO: Select Twitter card type -
@@ -62,9 +61,9 @@ export default () => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-  // socialImage: '',
-  // socialHeadline: '',
-  // socialSummary:  '',
+    socialImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ftrumps-russian-connections%2Fmaster.jpg?source=test&width=600&height=300&format=jpg&quality=lossless',
+    socialHeadline: 'Trump\'s Russian world',
+    socialSummary:  'Explore the three decades of bling, bluster and business',
 
   // TWITTER
   // twitterImage: '',

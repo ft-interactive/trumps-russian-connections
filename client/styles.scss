@@ -7,7 +7,7 @@ a {
 }
 
 h1.o-typography-heading1 {
-  font-size: 36px;
+  font-size: 34px;
   color: #333333;
   line-height: 33px;
   text-align: center;
@@ -26,7 +26,7 @@ hr {
     width: 20em;
 }
 
-.o-typography-lead {
+o-typography-link {
   font-family: MetricWeb, sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -34,9 +34,18 @@ hr {
   text-align: center;
 }
 
+.o-typography-lead > .o-typography-link {
+  font-size: 21px;
+  padding-top: 5px;
+}
+
 figure {
   margin: 0;
   margin-top: 15px;
+}
+
+.big-img {
+  display: none;
 }
 
 figcaption.o-typography-caption {
@@ -306,10 +315,14 @@ div.article-body > h2:first-child {
   .article-body > :not(.graphic) {
     padding: 1.8em 0.75em 0.5em;
  }
-   //
-  //  .o-share {
-  //    visibility: visible;
-  //  }
+
+ .big-img {
+   display: block;
+ }
+
+ .small-img {
+   display: none;
+ }
 
   hr {
       width: 30em;
