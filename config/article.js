@@ -38,7 +38,7 @@ export default () => ({ // eslint-disable-line
   // if array of authors, url is optional
   byline: [
     { name: 'Michael Stott', url: 'https://www.ft.com/stream/authorsId/Yjg2YTBhOWQtMTZjMS00ZjUzLWIyYTYtMDVmYmNmYzNhZDAz-QXV0aG9ycw==' },
-    { name: 'Catherine Belton', url: 'https://www.ft.com/search?q=Catherine+Belton'  },
+    { name: 'Catherine Belton', url: 'https://www.ft.com/stream/authorsId/Q0ItMDAwMDcyNg==-QXV0aG9ycw=='  },
   ],
 
   // Appears in the HTML <title>
@@ -61,7 +61,7 @@ export default () => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-    socialImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ftrumps-russian-connections%2Fmaster.jpg?source=test&width=600&height=300&format=jpg&quality=lossless',
+    socialImage: 'https://ig.ft.com/static/trumps-russian-connections/master.jpg',
     socialHeadline: 'Trump\'s Russian world',
     socialSummary:  'Explore the three decades of bling, bluster and business',
 
