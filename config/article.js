@@ -18,7 +18,7 @@ export default () => ({ // eslint-disable-line
 
   topic: {
     name: '',
-    url: '',
+    url: 'https://www.ft.com/us-election-2016',
   },
 
   relatedArticle: {
