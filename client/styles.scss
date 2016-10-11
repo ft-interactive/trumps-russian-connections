@@ -26,6 +26,10 @@ hr {
     width: 20em;
 }
 
+.o-typography-lead {
+  font-size: 23px;
+}
+
 o-typography-link {
   font-family: MetricWeb, sans-serif;
   font-size: 20px;
@@ -162,10 +166,10 @@ div.article-body > h2:first-child {
   }
 
   &__description > p {
-      font-family: FinancierDisplayWeb, serif;
-      font-size: 19px;
+      font-family: Georgia, serif;
+      font-size: 17px;
       color: rgb(80, 80, 80);
-      line-height: 26px;
+      line-height: 25px;
       margin: 4px 0px;
       display: block;
       //-webkit-margin-before: 1em;
@@ -265,6 +269,7 @@ div.article-body > h2:first-child {
   .person__description {
     font-size: 21px;
     line-height: 28px;
+    font-family: FinancierDisplayWeb, serif;
   }
 
   .person__name {
