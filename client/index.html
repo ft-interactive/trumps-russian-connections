@@ -4,7 +4,7 @@
 
   {% for group in groups %}
     <h2>{{group.name | capitalize }}</h2>
-    <p class="intro">{{ group.intro }}</p>
+    <p class="intro">{{ group.intro | safe }}</p>
     <div class="group">
       {% for person in group.people %}
       <div class="person card">

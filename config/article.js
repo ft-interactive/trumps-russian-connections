@@ -14,7 +14,7 @@ export default () => ({ // eslint-disable-line
   headline: 'Trump\'s Russian connections',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'The Republican contender\'s fascination with Russia spans 30&nbsp;years from Gorbachev to Putin, mingling business, entertainment and politics',
+  summary: 'Pressure on Donald Trump over his ties with Russia has grown after the US formally accused Vladimir Putin’s government of meddling in November’s presidential election',
 
   topic: {
     name: '',
