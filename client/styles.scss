@@ -46,11 +46,12 @@ o-typography-link {
 figure {
   margin: 0;
   margin-top: 15px;
+  text-align:center;
 }
 
-.big-img {
-  display: none;
-}
+// .big-img {
+//   display: none;
+// }
 
 figcaption.o-typography-caption {
   margin-bottom: 3px;
@@ -202,10 +203,10 @@ div.article-body > h2:first-child {
 .link-button{ // this is wrapping
       display: block;
       text-align: center;
-      margin-right: 12px;
+      margin-right: 2px;
       margin-top: 15px;
       font-size: 1.05rem;
-      width: 140px;
+      width: 120px;
       font-weight: 400;
       padding-left: 16px;
       height: 36px;
@@ -227,7 +228,7 @@ div.article-body > h2:first-child {
         right: 28px;
         width: 16px;
         height: 16px;
-        margin: 0 7px 8px 0;
+        margin: 0 0 8px 0;
       }
     }
 
@@ -310,6 +311,7 @@ div.article-body > h2:first-child {
   h1.o-typography-heading1{
     font-size: 40px;
     line-height: 40px;
+    margin-bottom: 7px;
   }
 
   .o-typography-lead{
@@ -321,12 +323,8 @@ div.article-body > h2:first-child {
     padding: 1.8em 0.75em 0.5em;
  }
 
- .big-img {
-   display: block;
- }
-
- .small-img {
-   display: none;
+ img {
+   max-width: 600px;
  }
 
   hr {
