@@ -42,7 +42,7 @@ export default () => ({ // eslint-disable-line
   ],
 
   // Appears in the HTML <title>
-  title: 'Trump\'s Russian connections span 30 years rom Gorbachev to Putin, mingling business, entertainment and politics',
+  title: 'Trump\'s Russian connections span 30 years from Gorbachev to Putin',
 
   // meta data
   description: 'Pressure on Donald Trump over his ties with Russia has grown after the US formally accused the Russian government of attempting to meddle in November’s presidential election',
