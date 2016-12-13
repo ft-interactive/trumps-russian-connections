@@ -14,7 +14,7 @@ export default () => ({ // eslint-disable-line
   headline: 'Trump\'s Russian connections',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Pressure on Donald Trump over his ties with Russia has grown after the US formally accused Vladimir Putin’s government of meddling in November’s presidential election',
+  summary: 'Donald Trump\'s ties to Russia are back under the spotlight after the CIA concluded that Moscow had interfered in November\'s presidential election to help the Republican candidate win',
 
   topic: {
     name: '',
