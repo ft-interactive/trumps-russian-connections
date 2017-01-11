@@ -9,7 +9,7 @@ export default () => ({ // eslint-disable-line
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date('2016-10-16T12:11:22Z'),
+  publishedDate: new Date('2016-12-13T17:06:45Z'),
 
   headline: 'Trump\'s Russian connections',
 
@@ -18,12 +18,12 @@ export default () => ({ // eslint-disable-line
 
   topic: {
     name: '',
-    url: 'https://www.ft.com/us-election-2016',
+    url: 'https://www.ft.com/donald-trump',
   },
 
   relatedArticle: {
-    text: 'US Election 2016 »',
-    url: 'https://www.ft.com/us-election-2016',
+    text: 'Donald Trump »',
+    url: 'https://www.ft.com/donald-trump',
   },
 
   mainImage: {
